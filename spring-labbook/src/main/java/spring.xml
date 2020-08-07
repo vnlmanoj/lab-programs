@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <bean id="employee" class="com.capg.spring_labbook.lab1_1.Employee">
+ <constructor-arg name="employeeId" value="121"></constructor-arg>
+  <constructor-arg name="employeeName" value="Praveen"></constructor-arg>
+  <constructor-arg name="salary" value="40000"></constructor-arg>
+   <constructor-arg name="busiessUnit" value="FBU"></constructor-arg>
+   <constructor-arg name="age" value="22"></constructor-arg>
+  
+ 
+ </bean>
+ <bean id="sbu" class="com.capg.spring_labbook.lab1_2.SBU">
+ <property name="sbuId" value="1"></property>
+ <property name="sbuName" value="FBU"></property>
+ <property name="sbuHead" value="Subhash"></property>
+ </bean>
+ 
+ <bean id="sbu2" class="com.capg.spring_labbook.lab1_3.SBU">
+ <property name="sbuCode" value="1"></property>
+ <property name="sbuName" value="FBU"></property>
+ <property name="sbuHead" value="Subhash"></property>
+ </bean>
+</beans>
