@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>Enter Trainee Details</h1>
+<form action="http://localhost:8083/trainee/addtrainee" method="post">
+<table>
+
+<tr>
+<td>Trainee Id</td>
+<td><input type="number" name="traineeId">
+</td>
+</tr>
+
+<tr>
+<td>Trainee Name</td>
+<td><input type="text" name="traineeName">
+</td>
+</tr>
+
+<tr>
+<td>Trainee Location</td>
+<td>
+<input type="radio" name="traineeLocation"  id="chennai" value="chennai">
+<label for="chennai">Chennai</label>
+<input type="radio" name="traineeLocation" id="bangalore" value="bangalore">
+<label for="bangalore">Bangalore</label>
+<input type="radio" name="traineeLocation" id="pune" value="pune">
+<label for="pune">Pune</label>
+<input type="radio" name="traineeLocation" id="mumbai" value="mumbai">
+<label for="mumbai">Mumbai</label>
+</td>
+</tr>
+<tr>
+
+<td>Trainee Domain</td>
+<td>
+
+<select id="domain" name="traineeDomain">
+  <option value="">please select</option>
+  <option value="JEE">JEE</option>
+  <option value=".Net">.Net</option>
+  <option value="Mainframe">Mainframe</option>
+  <option value="Oracle">oracle</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<button type="submit">Add Trainee</button>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
